@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:flutter/material.dart';
+import 'package:flutter/material.dart'  hide ModalBottomSheetRoute;
 import 'package:flutter/services.dart';
 import 'package:modal_bottom_sheet/modal_bottom_sheet.dart';
 
@@ -120,5 +120,5 @@ Future<T?> showBarModalBottomSheet<T>({
     duration: duration,
     settings: settings,
   ));
-  return result;
+  return Future.value(result);
 }
