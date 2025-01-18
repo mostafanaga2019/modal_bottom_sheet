@@ -48,7 +48,7 @@ Future<T?> showMaterialModalBottomSheet<T>({
     duration: duration,
     settings: settings,
   ));
-  return result;
+  return Future.value(result);
 }
 
 //Default container builder is the Material Appearance
